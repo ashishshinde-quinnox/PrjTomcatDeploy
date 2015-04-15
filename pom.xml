@@ -53,7 +53,7 @@
 				<version>1.1</version>
 				<configuration>
 					<server>testtomcat</server>
-					<url>http://10.15.16.164:8080/manager/</url>
+					<url>http://10.15.16.164:8080/manager/html</url>
 						<!-- <username>tomcat</username>
 						<password>tomcat</password> -->
 					<path>/sampleWebApp</path>
