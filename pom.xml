@@ -54,6 +54,7 @@
 				<configuration>
 					<server>tomcat</server>
 					<url>http://10.15.16.164:8080/manager/html</url>
+					<path>/sampleWebApp</path>
 				</configuration>
 				<goals>
 					<goal>deploy</goal>
