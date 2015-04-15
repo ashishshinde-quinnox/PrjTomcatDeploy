@@ -56,7 +56,7 @@
 					<url>http://10.15.16.164:8080/manager/</url>
 						<username>tomcat</username>
 						<password>tomcat</password>
-						<!-- sample2 -->
+						<!-- sample3 -->
 					<path>/sampleWebApp</path>
 				</configuration>
 				<goals>
