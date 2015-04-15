@@ -51,6 +51,10 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>tomcat-maven-plugin</artifactId>
 				<version>1.1</version>
+				<configuration>
+					<server>tomcat</server>
+					<url>http://10.15.16.164:8080/manager/html</url>
+				</configuration>
 				<goals>
 					<goal>deploy</goal>
 				</goals>
