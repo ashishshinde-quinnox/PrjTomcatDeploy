@@ -13,9 +13,9 @@
 		<filtering>true</filtering>
       </resource>
     </resources>
-	<filters>
+<!-- 	<filters>
       <filter>src/sqrrl-Jenkins.properties</filter>
-    </filters>
+    </filters> -->
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
