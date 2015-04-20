@@ -33,123 +33,23 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
-			<!-- <plugin>
-				<groupId>org.apache.tomcat.maven</groupId> <artifactId>tomcat7-maven-plugin</artifactId> 
-					<version>2.2</version> <configuration> <url>http://localhost:8080/manager/text</url> 
-					<server>TomcatServer</server> <path>/mkyongWebApp</path> </configuration> 
-					<groupId>org.codehaus.mojo</groupId> <artifactId>tomcat-maven-plugin</artifactId>
-				<groupId>org.apache.tomcat.maven</groupId>
+			
+			 <plugin>
+         			<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
-				 <configuration>
-					<server>tomcat</server>
-					<url>http://localhost:8080/manager</url>
-				</configuration>
-				 <goals> <goal>deploy</goal> </goals> 
-			</plugin> -->
-			 <plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>tomcat-maven-plugin</artifactId>
-				<version>1.1</version>
 				<configuration>
 					<server>testtomcat</server>
 					<url>http://10.15.16.164:8080/manager/html</url>
-						<!-- <username>tomcat</username>
-						<password>tomcat</password> -->
-					<path>/sampleWebApp</path>
+						<username>tomcat</username>
+						<password>tomcat</password>
 				</configuration>
 				<goals>
 					<goal>deploy</goal>
 				</goals>
-			</plugin> 
+         		</plugin>
 		</plugins>
 	</build>
 	
-	 <profiles>
-        <profile>
-            <id>dev</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-                <!-- <property>
-                    <name>environment.type</name>
-                    <value>dev</value>
-                </property> -->
-            </activation>
-            <properties>
-                <HOST>SAMPLE_PROD_HOST_URL</HOST>
-                <USERNAME>
-                    SAMPLE_DEV_USERNAME
-                </USERNAME>
-                <PASSWORD>SAMPLE_DEV_PASSWORD</PASSWORD>
-                <CONNECTIONTIMEOUT>SAMPLE_DEV_CONN_TIMEOUT</CONNECTIONTIMEOUT>
-          <!--      <REMINDER_DATASET>com.mysql.jdbc.Driver</REMINDER_DATASET>
-                <SURVEY_DATASET>
-                    jdbc:mysql://localhost:3306/app_dev
-                </SURVEY_DATASET>
-                <CHECKLIST_DATASET>development_user</CHECKLIST_DATASET>
-                <TIP_DATASET>development_password</TIP_DATASET>
-                <TRACKING_DATASET>com.mysql.jdbc.Driver</TRACKING_DATASET>
-                <CONTENT_DATASET>
-                    jdbc:mysql://localhost:3306/app_dev
-                </CONTENT_DATASET>
-                <USER_DATASET>development_user</USER_DATASET>
-                <SURVEYQUESTION_DATASET>development_password</SURVEYQUESTION_DATASET>
-                <METRICS_DATASET>com.mysql.jdbc.Driver</METRICS_DATASET>
-                <PROGRAM_DATASET>
-                    jdbc:mysql://localhost:3306/app_dev
-                </PROGRAM_DATASET>
-                <LTRACKER_DATASET>development_user</LTRACKER_DATASET>
-                <ERROR_HANDLER_URL>com.mysql.jdbc.Driver</ERROR_HANDLER_URL>
-                <ACCESS_TOKEN>
-                    jdbc:mysql://localhost:3306/app_dev
-                </ACCESS_TOKEN>
-                <ACTION>development_user</ACTION>
-                <ERROR_DIST_LIST>development_password</ERROR_DIST_LIST> -->
-            </properties>
-        </profile>
-        
-        
-        <profile>
-            <id>prod</id>
-            <!-- <activation>
-                <activeByDefault>true</activeByDefault>
-                <property>
-                    <name>environment.type</name>
-                    <value>prod</value>
-                </property>
-            </activation> -->
-            <properties>
-                <HOST>SAMPLE_PROD_HOST_URL</HOST>
-                <USERNAME>
-                    SAMPLE_PROD_USERNAME
-                </USERNAME>
-                <PASSWORD>SAMPLE_PROD_PASSWORD</PASSWORD>
-                <CONNECTIONTIMEOUT>SAMPLE_PROD_CONN_TIMEOUT</CONNECTIONTIMEOUT>
-           <!--     <REMINDER_DATASET>com.mysql.jdbc.Driver</REMINDER_DATASET>
-                <SURVEY_DATASET>
-                    jdbc:mysql://localhost:3306/app_prod
-                </SURVEY_DATASET>
-                <CHECKLIST_DATASET>development_user</CHECKLIST_DATASET>
-                <TIP_DATASET>development_password</TIP_DATASET>
-                <TRACKING_DATASET>com.mysql.jdbc.Driver</TRACKING_DATASET>
-                <CONTENT_DATASET>
-                    jdbc:mysql://localhost:3306/app_dev
-                </CONTENT_DATASET>
-                <USER_DATASET>development_user</USER_DATASET>
-                <SURVEYQUESTION_DATASET>development_password</SURVEYQUESTION_DATASET>
-                <METRICS_DATASET>com.mysql.jdbc.Driver</METRICS_DATASET>
-                <PROGRAM_DATASET>
-                    jdbc:mysql://localhost:3306/app_dev
-                </PROGRAM_DATASET>
-                <LTRACKER_DATASET>development_user</LTRACKER_DATASET>
-                <ERROR_HANDLER_URL>com.mysql.jdbc.Driver</ERROR_HANDLER_URL>
-                <ACCESS_TOKEN>
-                    jdbc:mysql://localhost:3306/app_dev
-                </ACCESS_TOKEN>
-                <ACTION>development_user</ACTION>
-                <ERROR_DIST_LIST>development_password</ERROR_DIST_LIST> -->
-                
-            </properties>
-        </profile>
-		</profiles>
+
 </project>
