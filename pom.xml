@@ -10,7 +10,7 @@
 		 <resources>
       <resource>
         <directory>src</directory>
-		<filtering>true</filtering>
+		<!-- <filtering>true</filtering> -->
       </resource>
     </resources>
 <!-- 	<filters>
@@ -40,7 +40,7 @@
 				<version>2.2</version>
 				<configuration>
 					<server>testtomcat</server>
-					<url>http://10.15.16.164:8080/manager/html</url>
+					<url>http://10.15.16.164:8080/manager/text</url>
 						<username>tomcat</username>
 						<password>tomcat</password>
 				</configuration>
