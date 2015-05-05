@@ -40,7 +40,7 @@
 				<version>2.2</version>
 				<configuration>
 					<server>testtomcat</server>
-					<url>http://10.15.16.164:8080/manager/text</url>
+					<url>http://localhost:8080/manager/text</url>
 						<username>tomcat</username>
 						<password>tomcat</password>
 				</configuration>
